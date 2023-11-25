@@ -3,6 +3,8 @@ using namespace std;
 int uaf;
 float caf;
 float fp;
+
+//function to calculate unadjusted functional point
 void UAF()
 {
     int input, output, Inquiry, internal_logical_files, external_interface_files, n;
@@ -117,6 +119,8 @@ void UAF()
 
     cout << "Your unadjusted functional point is : " << uaf << endl;
 }
+
+//function to calculate complexity adjustment factor
 
 void CAF()
 {
@@ -446,6 +450,8 @@ void CAF()
     cout << "Complexity Adjustment Factor is : " << caf << endl;
 }
 
+//function to calculate functional point
+
 void FP()
 {
     fp = caf * uaf;
@@ -457,4 +463,6 @@ int main()
     UAF();
     CAF();
     FP();
+
+    return 0 ;
 }
